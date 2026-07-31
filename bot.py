@@ -189,7 +189,7 @@ def safe_update_message(cid, mid, text, markup=None):
 
 def main_menu():
     m = InlineKeyboardMarkup(row_width=2)
-    m.add(InlineKeyboardButton("⚡ Buy Vouchers", callback_data="shop"))
+    m.add(InlineKeyboardButton("⚡ Buy Account", callback_data="shop"))
     m.add(InlineKeyboardButton("👤 Profile", callback_data="profile"),
           InlineKeyboardButton("🆘 Support", url=f"https://t.me/{config['support_user']}"))
     return m
@@ -397,7 +397,7 @@ def callback(call):
                     f"✅ **Order Successful!**\n"
                     f"🆔 Order ID: `{order_id}`\n"
                     f"📦 {prod['name']} (x{qty})\n"
-                    f"👇 **Your Codes:**\n"
+                    f"👇 **Your Account Login Number:**\n"
                     f"{formatted_codes}"
                 )
                 
