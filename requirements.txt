@@ -1,4 +1,3 @@
 pyTelegramBotAPI
 qrcode
-pillow
-```[cite: 1]
+Pillow
